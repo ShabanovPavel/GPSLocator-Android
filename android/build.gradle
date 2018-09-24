@@ -1,0 +1,45 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.+'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 27
+  buildToolsVersion "27.0.3"
+
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion 26
+    versionCode 1
+    versionName "1.0"
+  }
+  lintOptions {
+    abortOnError false
+  }
+    useLibrary 'org.apache.http.legacy'
+}
+
+repositories {
+  mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile "com.facebook.react:react-native:+"
+    compile 'com.android.support:appcompat-v7:24.+'
+    compile 'com.android.support:design:24.+'
+    compile 'org.apache.httpcomponents:httpmime:4.2.3'
+    compile 'com.android.support:support-v4:24.+'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile 'com.android.support:recyclerview-v7:24.+'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT' 
+}
+
+

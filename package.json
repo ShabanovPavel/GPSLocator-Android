@@ -1,0 +1,26 @@
+{
+  "name": "shp-gps-locator",
+  "version": "0.0.1",
+  "author": "shp",
+  "private": false,
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ShabanovPavel/GPSLocator-Android.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShabanovPavel/GPSLocator-Android/issues"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "library"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.38.0"
+  }
+}
