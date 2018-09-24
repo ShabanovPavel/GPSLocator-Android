@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ADSPackageGPSLocator implements ReactPackage {
+public class PackageGPSLocator implements ReactPackage {
 
     /*@Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
